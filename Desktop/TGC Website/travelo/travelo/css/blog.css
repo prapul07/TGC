@@ -359,48 +359,7 @@ section {
   box-shadow: inset 0 0 0 0 #9f8f68;
   transition: all 0.4s ease-in-out;
 }
-/** * Footer */
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 2em;
-  padding-right: 2em;
-}
-@media (min-width: 30em) {
-  .footer {
-    flex-direction: row;
-  }
-}
-.footer__archive {
-  position: relative;
-  color: #0a0a0a;
-}
-.footer__archive:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  border-bottom: 3px solid #9f8f68;
-  transition: width 0.4s ease-in-out;
-}
-.footer__archive:hover:after {
-  width: 100%;
-}
-.footer__social {
-  display: flex;
-  margin-top: 1em;
-}
-@media (min-width: 30em) {
-  .footer__social {
-    margin-top: 0;
-  }
-}
-.footer__social > *:not(:last-child) {
-  margin-right: 1em;
-}
+
 /** * Animations */
 @keyframes fade-in {
   from {
@@ -440,7 +399,7 @@ section {
   opacity: 0;
   max-height: 0;
   font-size: 0;
-  transition: .25s ease;
+  transition: 0.25s ease;
 }
 
 .read-more-state:checked ~ .read-more-wrap .read-more-target {
@@ -450,21 +409,20 @@ section {
 }
 
 .read-more-state ~ .read-more-trigger:before {
-  content: 'Read more';
+  content: "Read more";
 }
 
 .read-more-state:checked ~ .read-more-trigger:before {
-  content: 'Read less';
+  content: "Read less";
 }
 
 .read-more-trigger {
   cursor: pointer;
   display: inline-block;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   color: #666;
-  font-size: .9em;
+  font-size: 0.9em;
   line-height: 2;
   border: 5px solid #ddd;
-  border-radius: .25em;
+  border-radius: 0.25em;
 }
-
